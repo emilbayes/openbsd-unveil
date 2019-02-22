@@ -1,0 +1,34 @@
+{
+  "name": "openbsd-unveil",
+  "version": "1.0.0",
+  "description": "OpenBSD unveil(2) bindings for Node.js with prebuilds",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "napi-macros": "^1.8.2",
+    "node-gyp-build": "^3.8.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "tape": "^4.10.1"
+  },
+  "scripts": {
+    "install": "node-gyp-build",
+    "dev": "node-gyp rebuild",
+    "pretest": "standard",
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilbayes/openbsd-unveil.git"
+  },
+  "keywords": [],
+  "author": "Emil Bay <github@tixz.dk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilbayes/openbsd-unveil/issues"
+  },
+  "homepage": "https://github.com/emilbayes/openbsd-unveil#readme"
+}
