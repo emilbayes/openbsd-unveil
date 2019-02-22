@@ -1,6 +1,6 @@
 {
   "name": "openbsd-unveil",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "OpenBSD unveil(2) bindings for Node.js with prebuilds",
   "main": "index.js",
   "publishConfig": {
