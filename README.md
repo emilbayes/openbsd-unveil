@@ -9,7 +9,7 @@ const unveil = require('openbsd-unveil')
 const fs = require('fs')
 
 unveil(__dirname, 'rwc') // can read, write and create files from here down
-const fd = fs.openSync('../test.txt', 'r', 0o555)
+const fd = fs.openSync('../test.txt', 'a+', 0o555)
 
 unveil() // Disable unveil
 ```
